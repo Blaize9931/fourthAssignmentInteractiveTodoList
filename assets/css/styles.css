@@ -1,3 +1,21 @@
 .container {
+    border: solid black 2px;
+    width: 300px;
+    height: auto;
+    
+}
+
+.todoInput {
+    position: relative;
+    margin-bottom: 5px;
+    left: 25px;
+}
+.todo {
+    display: flex;
+}
+
+.todo div {
+    flex-grow: 1;
+    display: flex;
     
 }
