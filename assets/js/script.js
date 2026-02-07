@@ -1,7 +1,7 @@
 
 const add = document.getElementById("add");
 const todoInput = document.getElementById("todo-input");
-
+const todoList = document.querySelector(".todoList");
 add.addEventListener("click", addTodo);
   
 
@@ -10,6 +10,9 @@ function addTodo() {
    if(todoInput.value.trim() == "") {
         alert("You need to write something!");
 } else {
-  
+    const createLiEl = document.createElement("li");
+    createLiEl.innerHTML = todoInput.value.trim();
+    todoList.appendChild(createLiEl);
+
 }
 }
