@@ -1,12 +1,15 @@
-//add button
+
 const add = document.getElementById("add");
-//input field
 const todoInput = document.getElementById("todo-input");
 
-//When i click button it adds text in the input field.
-add.addEventListener("click", myFunction);
+add.addEventListener("click", addTodo);
   
 
-function myFunction() {
-  
+function addTodo() {
+
+   if(todoInput.textContent == "" ) {
+        alert("You need to write something!");
+} else {
+    
+}
 }
