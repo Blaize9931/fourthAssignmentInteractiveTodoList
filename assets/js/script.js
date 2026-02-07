@@ -7,9 +7,9 @@ add.addEventListener("click", addTodo);
 
 function addTodo() {
 
-   if(todoInput.textContent == "" ) {
+   if(todoInput.value == "" ) {
         alert("You need to write something!");
 } else {
-    
+  
 }
 }
