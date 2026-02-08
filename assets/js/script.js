@@ -23,6 +23,7 @@ function addTodo() {
 }
 
 function editTodo (e) {
-    
-    console.log(e.target);
+    let button = e.target
+    const closestLi = button.closest("li");
+    console.log(closestLi);
 }
