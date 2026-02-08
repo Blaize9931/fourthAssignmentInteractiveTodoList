@@ -26,5 +26,12 @@ function editTodo (e) {
     let button = e.target
     const closestLi = button.closest("li");
     const closestText = closestLi.querySelector(".todo-text");
-    
+    const newInput = document.createElement("input");
+    newInput.addEventListener("keydown", function(e) {
+        if (e.key === "Enter") {
+
+            newInput.value
+        }
+    }) 
+         
 }
