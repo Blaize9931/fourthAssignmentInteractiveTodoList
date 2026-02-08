@@ -25,5 +25,6 @@ function addTodo() {
 function editTodo (e) {
     let button = e.target
     const closestLi = button.closest("li");
-    console.log(closestLi);
+    const closestText = closestLi.querySelector(".todo-text");
+    
 }
