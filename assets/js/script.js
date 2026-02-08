@@ -11,7 +11,11 @@ function addTodo() {
         alert("You need to write something!");
 } else {
     const createLiEl = document.createElement("li");
-    createLiEl.innerHTML = todoInput.value.trim();
+    createLiEl.innerHTML = `${todoInput.value.trim()}
+                            <div>
+                                <button class="btn" id="delete">Delete</button>
+                                <button class="btn" id="edit">Edit</button>
+                            </div>`;
     todoList.appendChild(createLiEl);
 
 }
