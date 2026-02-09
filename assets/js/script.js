@@ -29,7 +29,7 @@ function editTodo (e) {
     const closestText = closestLi.querySelector(".todo-text");
     const newInput = document.createElement("input");
     let eventLocation = e.target
-    // check which edit key was clicked
+    
     
     if (button.closest(".edit")) {
         newInput.value = closestText.textContent
@@ -45,4 +45,9 @@ function editTodo (e) {
         }
     }) 
          
+}
+
+function deleteTodo (e) {
+    let button = e.target
+    const closestLi = button.closest("li");
 }
