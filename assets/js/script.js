@@ -22,15 +22,26 @@ function addTodo() {
 }
 }
 
+
 function editTodo (e) {
     let button = e.target
     const closestLi = button.closest("li");
     const closestText = closestLi.querySelector(".todo-text");
     const newInput = document.createElement("input");
+    let eventLocation = e.target
+    // check which edit key was clicked
+    
+    if (button.closest(".edit")) {
+        newInput.value = closestText.textContent
+        closestLi.replaceChild(newInput, closestText)
+    }
+    
     newInput.addEventListener("keydown", function(e) {
-        if (e.key === "Enter") {
+        if ( e.key === "Enter") {
 
-            newInput.value
+            closestText.textContent = newInput.value
+            closestLi.replaceChild(closestText, newInput);
+
         }
     }) 
          
