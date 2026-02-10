@@ -3,7 +3,8 @@ const todoInput = document.getElementById("todo-input");
 const todoList = document.querySelector(".todoList");
 const editTodoBtn = document.querySelector(".edit");
 add.addEventListener("click", addTodo);
-todoList.addEventListener("click", editTodo); 
+todoList.addEventListener("click", editTodo);
+todoList.addEventListener("click", deleteTodo);
 
 
 function addTodo() {
@@ -47,7 +48,10 @@ function editTodo (e) {
          
 }
 
-function deleteTodo (e) {
+function deleteTodo (e) { 
     let button = e.target
     const closestLi = button.closest("li");
+    closestLi.remove();
+
+
 }
