@@ -2,10 +2,11 @@
     border: solid black 2px;
     width: 300px;
     height: auto;
+    border-radius: 25px;
     
 }
 
-.todoInput {
+.todoInput, h2 {
     position: relative;
     margin-bottom: 5px;
     left: 25px;
@@ -19,3 +20,5 @@
     display: flex;
     
 }
+
+
