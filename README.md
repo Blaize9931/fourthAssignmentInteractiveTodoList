@@ -1,6 +1,7 @@
 # My 4th Assignment:
 ## An Interactive TodoList
-
+### We were tasked to build a Todo list which allowed for list items to be displayed/added, removed and edited. 
+***
 I used GitHub to set this up by opening a repository, then cloning it down locally. This allowed for me to work through the assignment in increments at my understandings pace. 
 And GOD! I was having issues processing!
 ***
