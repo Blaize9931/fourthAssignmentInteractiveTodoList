@@ -3,8 +3,15 @@ const todoInput = document.getElementById("todo-input");
 const todoList = document.querySelector(".todoList");
 const editTodoBtn = document.querySelector(".edit");
 add.addEventListener("click", addTodo);
-todoList.addEventListener("click", editTodo);
-todoList.addEventListener("click", deleteTodo);
+
+todoList.addEventListener("click", (e) => {
+  if (e.target.closest(".delete")) {
+    deleteTodo(e);
+  } else if (e.target.closest(".edit")) {
+    editTodo(e);
+  }
+});
+
 
 
 function addTodo() {
